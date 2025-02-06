@@ -4,6 +4,8 @@ import { inject } from '@angular/core'; //inject http service
 import { HttpService } from '../../../services/http.service'; //import http service
 import { TaskListComponent } from '../../task-list/task-list.component';
 import { DatePipe } from '@angular/common';
+import { EventEmitter } from '@angular/core';
+import { Output } from '@angular/core';
 
 @Component({
   selector: 'app-all-task',
@@ -45,5 +47,7 @@ export class AllTaskComponent {
       this.newTask=""
       console.log(this.list)
     }
-}
+  
+  }
 
+//import { EventEmitter } from '@angular/core';

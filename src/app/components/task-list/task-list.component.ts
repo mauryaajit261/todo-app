@@ -23,6 +23,7 @@ export class ChildComponent {
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.scss'
 })
+
 export class TaskListComponent {
 @Input() taskList:any[]=[];
 
